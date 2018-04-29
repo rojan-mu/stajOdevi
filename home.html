@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1);  </script>
+
+    <meta charset="UTF-8">
+
+    <title>AnaSayfa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <style>
+    body {
+
+  background-color: #666;
+
+  opacity: 0.95;
+  filter:alpha(opacity=95);
+
+
+    }
+
+        nav {
+            max-width: 1000px;
+            height: 0px;
+            border-bottom: 100px solid #860255;
+            border-left: 40px solid transparent;
+            position: relative;
+            margin: 0 auto;
+            box-shadow: 20px 17px 27px rgba(0, 0, 0, 0.15);
+        }
+
+            nav::before {
+                content: '';
+                margin-top: 6%;
+                display: block;
+            }
+
+            nav .inner {
+                width: 100%;
+                height: 100px;
+                position: absolute;
+                right: 0;
+                overflow: hidden;
+                background: #860255;
+                /* Webkit (Safari/Chrome 10) */
+                background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #860255), color-stop(100, #EF4B3F));
+                /* IE10+ */
+                background-image: -ms-linear-gradient(left, #860255 0%, #EF4B3F 100%);
+                /* Mozilla Firefox */
+                background-image: -moz-linear-gradient(left, #860255 0%, #EF4B3F 100%);
+                /* Opera */
+                background-image: -o-linear-gradient(left, #860255 0%, #EF4B3F 100%);
+                /* Webkit (Chrome 11+) */
+                background-image: -webkit-linear-gradient(left, #860255 0%, #EF4B3F 100%);
+                /* W3C Markup */
+                background-image: linear-gradient(to right, #860255 0%, #EF4B3F 100%);
+            }
+
+            nav .active {
+                top: 80px !important;
+                position: relative;
+                transition: all .3s;
+            }
+
+            nav ul {
+                float: right;
+                list-style-type: none;
+                line-height: 6.2;
+                padding: 0;
+                margin: 0;
+                transition: all .3s;
+                position: relative;
+                top: 0;
+            }
+
+            nav li {
+                display: inline-block;
+                margin: 0;
+            }
+
+                nav li::before {
+                    content: ' / ';
+                    margin: 0 10px;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                nav li:first-child::before {
+                    display: none;
+                }
+
+            nav .search {
+                width: 80px;
+                height: 0px;
+                float: right;
+                color: #fff;
+                font-size: 18px;
+                border-bottom: 100px solid rgba(0, 0, 0, 0.1);
+                border-left: 40px solid transparent;
+                position: relative;
+                transition: .3s;
+            }
+
+                nav .search::before {
+                    content: '';
+                }
+
+                nav .search:hover {
+                    border-bottom: 100px solid rgba(0, 0, 0, 0.3);
+                }
+
+            nav .fa-search {
+                position: relative;
+                left: 25px;
+                top: 38px;
+            }
+
+            nav input[type=search] {
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid #fff;
+                -webkit-appearance: none;
+            }
+
+            nav input.search_box {
+                position: absolute;
+                font-size: 16px;
+                color: #fff;
+                line-height: 4;
+                top: -100px;
+                width: 320px;
+                right: 130px;
+                transition: all .3s;
+            }
+
+            nav .search_box_active {
+                top: 15px !important;
+                transition: all .3s;
+            }
+
+            nav input:focus {
+                outline: none;
+            }
+
+            nav input::-webkit-input-placeholder {
+                color: #fff;
+            }
+
+            nav input[type="search"]::-webkit-search-cancel-button {
+                -webkit-appearance: none;
+                height: 1px;
+                width: 15px;
+                background: transparent;
+                border-radius: 50%;
+            }
+
+                nav input[type="search"]::-webkit-search-cancel-button::before {
+                    content: '+';
+                    color: #fff;
+                    font-weight: bold;
+                    -webkit-transform: rotate(45deg);
+                    font-size: 21px;
+                    position: absolute;
+                    top: -10px;
+                }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+
+
+
+
+
+
+
+            @charset "UTF-8";
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+            body {
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 300;
+              line-height: 1.42em;
+              color:#A7A1AE;
+              background-color:#1F2739;
+            }
+
+            h1 {
+              font-size:3em;
+              font-weight: 300;
+              line-height:1em;
+              text-align: center;
+              color: #4DC3FA;
+            }
+
+            h2 {
+              font-size:1em;
+              font-weight: 300;
+              text-align: center;
+              display: block;
+              line-height:1em;
+              padding-bottom: 2em;
+              color: #FB667A;
+            }
+
+            h2 a {
+              font-weight: 700;
+              text-transform: uppercase;
+              color: #FB667A;
+              text-decoration: none;
+            }
+
+            .blue { color: #185875; }
+            .yellow { color: #FFF842; }
+
+            .container th h1 {
+                font-weight: bold;
+                font-size: 1em;
+              text-align: left;
+              color: #185875;
+            }
+
+            .container td {
+                font-weight: normal;
+                font-size: 1em;
+              -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+                 -moz-box-shadow: 0 2px 2px -2px #0E1119;
+                      box-shadow: 0 2px 2px -2px #0E1119;
+            }
+
+            .container {
+                text-align: left;
+                overflow: hidden;
+                width: 80%;
+                margin: 0 auto;
+              display: table;
+              padding: 0 0 8em 0;
+            }
+
+            .container td, .container th {
+                padding-bottom: 2%;
+                padding-top: 2%;
+              padding-left:2%;
+            }
+
+            /* Background-color of the odd rows */
+            .container tr:nth-child(odd) {
+                background-color: #323C50;
+            }
+
+            /* Background-color of the even rows */
+            .container tr:nth-child(even) {
+                background-color: #2C3446;
+            }
+
+            .container th {
+                background-color: #1F2739;
+            }
+
+            .container td:first-child { color: #FB667A; }
+
+            .container tr:hover {
+               background-color: #464A52;
+            -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+                 -moz-box-shadow: 0 6px 6px -6px #0E1119;
+                      box-shadow: 0 6px 6px -6px #0E1119;
+                      cursor:pointer;
+            }
+
+            .container td:hover {
+
+            }
+
+            @media (max-width: 800px) {
+            .container td:nth-child(4),
+            .container th:nth-child(4) { display: none; }
+            }
+    </style>
+</head>
+<body>
+
+<form action="/defaultHandler" method="post" accept-charset="UTF-8" novalidate="" id="form">
+
+
+    <!-- DEMO -->
+    <nav>
+        <div class="inner">
+            <input class="search_box" type=search placeholder="90850855xxxx" name="numaraa" id="numaraa">
+            <div class="search"><i class="fa fa-search"></i></div>
+            <ul>
+                <li><a href="https://www.bulutfon.com/" >Bulutfon</a></li>
+                <li onclick="nums()" style="cursor:pointer;"><a >Önerilen</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</form>
+
+<h1 id="numara">{{.Numaraa}}</h1>
+<h2 id="p1" style="visibility:hidden">{{.Error}}</h2>
+<h2 id="fiyat" style="visibility:hidden" >{{.Fiyat}} TL</h2>
+
+
+
+<div id="nums" style="visibility: hidden;">
+<table class="container">
+	<thead>
+		<tr style="cursor:default;">
+			<th><h1>Numara</h1></th>
+			<th><h1>Tip</h1></th>
+			<th><h1>Fiyat</h1></th>
+			<th><h1>Toplam (+KDV)</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<tr >
+			<td>90 850 885 <p style="color:green;display:inline;">3333</p></td>
+			<td>Özel</td>
+			<td>1000</td>
+			<td>1180</td>
+		</tr>
+		<tr>
+			<td>+90 850 885 <p style="color:green;display:inline;">1212</p></td>
+			<td>Özel</td>
+			<td>500</td>
+			<td>590</td>
+		</tr>
+		<tr>
+			<td>90 850 885 <p style="color:green;display:inline;">0011</p></td>
+			<td>Özel</td>
+			<td>250</td>
+			<td>295</td>
+		</tr>
+    <tr>
+			<td>90 850 <p style="color:green;display:inline;">885</p> 2 <p style="color:green;display:inline;">885</p></td>
+			<td>Özel</td>
+			<td>1000</td>
+			<td>1180</td>
+		</tr>
+    <tr>
+			<td>90 850 885 <p style="color:green;display:inline;">1234</p></td>
+			<td>Özel</td>
+			<td>100</td>
+			<td>118</td>
+		</tr>
+    <tr>
+			<td>90 850 885 1<p style="color:green;display:inline;">030</p></td>
+			<td>Özel</td>
+			<td>100</td>
+			<td>118</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+    <script>
+        // Search Toggle //
+        $(".search").click(function () {
+            $("ul").toggleClass("active");
+            $(".search_box").toggleClass("search_box_active");
+        });
+				var str = document.getElementById('fiyat').innerHTML;
+				if (str=='0 TL') {
+          document.getElementById("fiyat").style.visibility="hidden";
+				}
+        else {document.getElementById("fiyat").style.visibility="visible";}
+if (document.getElementById('numara').innerHTML!='')
+  document.getElementById("p1").style.visibility="visible";
+
+function nums(){
+document.getElementById("nums").style.visibility="visible";
+}
+$("tr").click(function(){
+  window.location = "example.html";
+});
+
+
+
+$("form").submit(function(){
+    $.ajax({
+      url: '/ajax',
+      type: "post",
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify({ Numara: document.getElementById("numaraa").value}),
+      dataType: 'json',
+      success: function() {
+      //  $('#numara').append(r.Numara);
+
+      }
+    });
+  });
+    </script>
+
+</body>
