@@ -72,6 +72,7 @@ if err != nil || 908508853999 <= number ||   number<=908508850000 {
   wd.Error="Lütfen Geçerli Numara Giriniz !!"
   wd.Fiyat=0
 }
+wd.Fiyat=0
 if err == nil && 908508853999 >= number &&   number>=908508850000 {
 
 
@@ -88,7 +89,7 @@ wd.Fiyat=500+500*0.18
 } else if   num[8]==num[9] && num[10]==num[11] {
 wd.Fiyat=250+250*0.18
 
-} else if   num[8]==num[10]  {
+} else if   num[9]==num[11]  {
 wd.Fiyat=100+100*0.18
 } else if   ardisik(num){
 wd.Fiyat=100+100*0.18
@@ -97,7 +98,10 @@ wd.Fiyat=100+100*0.18
 wd.Fiyat=50+50*0.18
 }
 
-  wd.Error="Girilen Numaranın Fiyatı + KDV : "
+  wd.Error="Özel, Girilen Numaranın Fiyatı + KDV : "
+  if wd.Fiyat==0{
+    wd.Error="Girilen Numaranın tipi Normaldır "
+  }
 }
 
 tmpl, _ := template.ParseFiles("index.html")
