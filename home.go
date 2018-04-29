@@ -70,7 +70,6 @@ num:=strings.Replace(wd.Numaraa, " ", "", -1)
 number, err := strconv.ParseInt(num, 10, 64)
 if err != nil || 908508853999 <= number ||   number<=908508850000 {
   wd.Error="Lütfen Geçerli Numara Giriniz !!"
-  wd.Fiyat=0
 }
 wd.Fiyat=0
 if err == nil && 908508853999 >= number &&   number>=908508850000 {
